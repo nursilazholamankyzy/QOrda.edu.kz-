@@ -1,0 +1,181 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QOrda - Білім беру орталығы</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">QOrda</div>
+        <nav>
+            <ul>
+                <li><a href="#">Басты бет</a></li>
+                <li><a href="#courses">Курстар</a></li>
+                <li><a href="#teachers">Оқытушылар</a></li>
+                <li><a href="#contact">Байланыс</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Сапалы білім – жарқын болашақ кепілі</h1>
+        <p>Бізбен бірге жаңа білім алыңыз және болашағыңызды қалыптастырыңыз!</p>
+        <a href="#courses" class="btn">Курстарды қарау</a>
+    </section>
+
+    <section id="courses" class="courses">
+        <h2>Біздің курстар</h2>
+        <div class="course-list">
+            <div class="course">
+                <h3>Web-бағдарламалау</h3>
+                <p>HTML, CSS, JavaScript негіздері</p>
+            </div>
+            <div class="course">
+                <h3>Data Science</h3>
+                <p>Python және деректерді талдау</p>
+            </div>
+            <div class="course">
+                <h3>Графикалық дизайн</h3>
+                <p>Photoshop және Illustrator негіздері</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="teachers" class="teachers">
+        <h2>Біздің оқытушылар</h2>
+        <div class="teacher-list">
+            <div class="teacher">
+                <h3>Айжан Төре</h3>
+                <p>Web-бағдарламалау</p>
+            </div>
+            <div class="teacher">
+                <h3>Еркін Сапаров</h3>
+                <p>Data Science</p>
+            </div>
+            <div class="teacher">
+                <h3>Мадина Әлім</h3>
+                <p>Графикалық дизайн</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Байланыс</h2>
+        <p>Email: info@qorda.kz</p>
+        <p>Телефон: +7 700 123 45 67</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 QOrda. Барлық құқықтар қорғалған.</p>
+    </footer>
+
+</body>
+</html><style>body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #3498db;
+    color: white;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    background: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.courses, .teachers, .contact {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.course-list, .teacher-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.course, .teacher {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}</style><script>document.addEventListener("DOMContentLoaded", function() {
+    const navLinks = document.querySelectorAll("nav ul li a");
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", function(event) {
+            event.preventDefault();
+            const sectionId = this.getAttribute("href").substring(1);
+            const section = document.getElementById(sectionId);
+            window.scrollTo({
+                top: section.offsetTop - 50,
+                behavior: "smooth"
+            });
+        });
+    });
+});</script>
