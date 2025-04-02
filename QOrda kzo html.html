@@ -1,0 +1,330 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QOrda.edu.kz – Білім беру платформасы</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #007bff, #00d4ff);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            background: #0056b3;
+            padding: 10px;
+            text-align: center;
+            z-index: 100;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 5px 10px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+        section {
+            padding: 40px;
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+        .courses, .teachers, .discounts {
+            background: #eef;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+        }
+        th {
+            background: #007bff;
+            color: white;
+            font-weight: 600;
+        }
+        .teacher-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .teacher-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .teacher-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+        .teacher-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        footer {
+            background: #007bff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>QOrda.edu.kz – Білім беру платформасы</header>
+
+    <nav>
+        <a href="#about">Біз туралы</a>
+        <a href="#courses">Курстар</a>
+        <a href="#teachers">Оқытушылар</a>
+        <a href="#discounts">Акциялар</a>
+        <a href="#contact">Байланыс</a>
+    </nav>
+
+    <section id="about">
+        <h2>Біз туралы</h2>
+        <p>QOrda.edu.kz – Қызылорда облысындағы жетекші білім беру платформасы. Біз жоғары сапалы онлайн және оффлайн курстар ұсынамыз.</p>
+    </section>
+
+    <section id="courses" class="courses">
+        <h2>Біздің курстар</h2>
+        <table>
+            <tr>
+                <th>Курс</th>
+                <th>Ұзақтығы</th>
+                <th>Бағасы</th>
+            </tr>
+            <tr>
+                <td>Бағдарламалау негіздері</td>
+                <td>3 ай</td>
+                <td>60,000 тг</td>
+            </tr>
+            <tr>
+                <td>Веб-әзірлеу (HTML, CSS, JavaScript)</td>
+                <td>4 ай</td>
+                <td>80,000 тг</td>
+            </tr>
+            <tr>
+                <td>Графикалық дизайн</td>
+                <td>2 ай</td>
+                <td>50,000 тг</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="teachers" class="teachers">
+        <h2>Біздің оқытушылар</h2>
+        <div class="teacher-container">
+            <div class="teacher-card">
+                <img src="teacher1.jpg" alt="Оқытушы">
+                <h3>Жоламанқызы Нұрсила</h3>
+                <p>Бағдарламалау</p>
+            </div>
+            <div class="teacher-card">
+                <img src="teacher2.jpg" alt="Оқытушы">
+                <h3>Абсалимова Аружан</h3>
+                <p>Веб-әзірлеу</p>
+            </div>
+            <div class="teacher-card">
+                <img src="teacher3.jpg" alt="Оқытушы">
+                <h3>Мәдиұлы Асқар</h3>
+                <p>Графикалық дизайн</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="discounts" class="discounts">
+        <h2>🎉 Акциялар мен жеңілдіктер</h2>
+        <p><b>🔥 Берекелі жұма – 30% жеңілдік!</b></p>
+        <p>Жұма күні кез келген курсқа <b>30% жеңілдік</b> ал!</p>
+    </section>
+
+    <section id="contact">
+        <h2>Байланыс</h2>
+        <p>📍 Мекенжай: Қызылорда облысы</p>
+        <p>📞 Телефон: +7 707 123 4567</p>
+        <p>📧 Email: info@qorda.edu.kz</p>
+    </section>
+
+    <footer>
+        © 2025 QOrda.edu.kz – Барлық құқықтар қорғалған.
+    </footer>
+
+</body>
+</html><style>/* Жалпы стильдер */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Жоғарғы тақырып */
+header {
+    background: linear-gradient(135deg, #007bff, #00d4ff);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Навигация */
+nav {
+    position: sticky;
+    top: 0;
+    background: #0056b3;
+    padding: 10px;
+    text-align: center;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Бөлімдер */
+section {
+    padding: 40px;
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Кесте стильдері */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+th {
+    background: #007bff;
+    color: white;
+    font-weight: 600;
+}
+
+/* Оқытушылар стилі */
+.teacher-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.teacher-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.teacher-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.teacher-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Футер */
+footer {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}</style><script>// Навигация өзгерісі (жылжығанда түсін өзгертеді)
+window.addEventListener("scroll", function() {
+    let navbar = document.querySelector("nav");
+    if (window.scrollY > 50) {
+        navbar.style.background = "#004080";
+        navbar.style.transition = "0.3s";
+    } else {
+        navbar.style.background = "#0056b3";
+    }
+});
+
+// Оқытушы картасын басқанда ақпарат шығару
+document.querySelectorAll(".teacher-card").forEach(card => {
+    card.addEventListener("click", function() {
+        alert(`Сіз ${this.querySelector("h3").innerText} оқытушысын таңдадыңыз!`);
+    });
+});
+
+// Акцияға тіркелу формасы
+function subscribeDiscount() {
+    let name = prompt("Атыңызды енгізіңіз:");
+    if (name) {
+        alert(`${name}, сіз акцияға сәтті тіркелдіңіз!`);
+    } else {
+        alert("Тіркелу болдырылмады.");
+    }
+}</script>
